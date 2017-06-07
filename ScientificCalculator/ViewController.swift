@@ -10,15 +10,46 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var leftStackViewLeftConstraint: NSLayoutConstraint!
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return.lightContent
+    }
     
+    @IBOutlet var leftStackViewLeftConstraint: NSLayoutConstraint!
     @IBOutlet var rightStackViewLeftConstraint: NSLayoutConstraint!
+    
+    @IBOutlet var resultLabel: UILabel!
+    
+    var op:Int = 0 // this will be used to track which operator (op) was pressed
+    var setZero:Bool = true
+    var operand:Float = 0
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setZero = true
+        op = 0
+        resultLabel.text = "0"
+        
+        
     }
+    
+    
+    @IBAction func numericPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func operatorPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func clearPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func equalsPressed(_ sender: UIButton) {
+    }
+    
     
     override func viewWillLayoutSubviews() {
         checkOrientation(orientation: UIDevice.current.orientation)
