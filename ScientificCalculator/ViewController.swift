@@ -40,15 +40,45 @@ class ViewController: UIViewController {
     
     
     @IBAction func numericPressed(_ sender: UIButton) {
+        
+        if setZero {
+            resultLabel.text = "0"
+            setZero = false
+            
+        }
+        
+        var result: Float = Float(resultLabel.text!)!
+        result = result * 10 + Float(sender.tag)
+        resultLabel.text =  "\(result)"
+        
     }
     
     @IBAction func operatorPressed(_ sender: UIButton) {
+        
+        if op != 0 {
+            operand = calculateResult(oprtr: op)
+            resultLabel.text = "\(operand)"
+            op = sender.tag
+            setZero = true
+        } else {
+            let res: Float = Float(resultLabel.text!)!
+            operand = res
+            setZero = true
+            op = sender.tag
+        }
+        
     }
     
     @IBAction func clearPressed(_ sender: UIButton) {
+        resultLabel.text = "0"
     }
     
     @IBAction func equalsPressed(_ sender: UIButton) {
+        operand = calculateResult(oprtr: op)
+        resultLabel.text = "\(operand)"
+        op = 0
+        setZero = true
+        
     }
     
     
