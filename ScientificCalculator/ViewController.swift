@@ -52,6 +52,42 @@ class ViewController: UIViewController {
     }
     
     
+    func calculateResult(oprtr: Int) -> Float {
+        
+        var returnValue: Float = Float(resultLabel.text!)!
+        
+        switch (oprtr) {
+    
+        case 1:
+    
+            returnValue = operand * returnValue
+            break
+            
+        case 2:
+    
+            returnValue = operand / returnValue
+            break
+            
+        case 3:
+    
+            returnValue = operand + returnValue
+            break
+            
+        case 4:
+            
+            returnValue = operand - returnValue
+            break
+            
+        default:
+            break
+    
+        }
+        
+        return returnValue
+
+    }
+    
+        
     
     override func viewWillLayoutSubviews() {
         checkOrientation(orientation: UIDevice.current.orientation)
