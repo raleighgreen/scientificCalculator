@@ -19,10 +19,11 @@ class ViewController: UIViewController {
     
     @IBOutlet var resultLabel: UILabel!
     
+    
+    
     var op:Int = 0 // this will be used to track which operator (op) was pressed
     var setZero:Bool = true
     var operand:Float = 0
-    
     
     
     
@@ -37,8 +38,8 @@ class ViewController: UIViewController {
     }
     
     
+    
     @IBAction func numericPressed(_ sender: UIButton) {
-        
     }
     
     @IBAction func operatorPressed(_ sender: UIButton) {
@@ -51,6 +52,7 @@ class ViewController: UIViewController {
     }
     
     
+    
     override func viewWillLayoutSubviews() {
         checkOrientation(orientation: UIDevice.current.orientation)
     }
@@ -58,6 +60,8 @@ class ViewController: UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         checkOrientation(orientation: UIDevice.current.orientation)
     }
+    
+    
     
     func checkOrientation(orientation: UIDeviceOrientation) {
         
