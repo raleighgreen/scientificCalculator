@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var resultLabel: UILabel!
     
-    
-    
     var op:Int = 0 // this will be used to track which operator (op) was pressed
     var setZero:Bool = true
     var operand:Float = 0
