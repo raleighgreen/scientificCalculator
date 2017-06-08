@@ -36,6 +36,17 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func playC(_ sender: Any) {
+        
+        print("testin")
+        
+    }
+    
+    
+    
+    
+    
+    
     
     @IBAction func numericPressed(_ sender: UIButton) {
         
