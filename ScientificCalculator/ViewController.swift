@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         let audioPlayer = audioPlayers[sender.tag]
         
         if audioPlayer.isPlaying {
-            audioPlayer.stop()
+            audioPlayer.currentTime = 0
             audioPlayer.play()
         }
         else {

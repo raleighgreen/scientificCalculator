@@ -51,7 +51,7 @@
                                                 <rect key="frame" x="31" y="0.0" width="30" height="55.5"/>
                                                 <color key="backgroundColor" red="0.35176223633021581" green="0.40259762110000002" blue="0.61742388747553956" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="C#">
+                                                <state key="normal" title="D♭">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -89,7 +89,7 @@
                                                 <rect key="frame" x="31" y="0.0" width="30" height="55.5"/>
                                                 <color key="backgroundColor" red="0.35176223633021581" green="0.40259762110000002" blue="0.61742388747553956" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="A#">
+                                                <state key="normal" title="B♭">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -116,7 +116,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="55"/>
                                                 <color key="backgroundColor" red="0.35176223633021581" green="0.40259762110000002" blue="0.61742388747553956" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="F#">
+                                                <state key="normal" title="G♭">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -138,7 +138,7 @@
                                                 <rect key="frame" x="62" y="0.0" width="30" height="55"/>
                                                 <color key="backgroundColor" red="0.35176223633021581" green="0.40259762110000002" blue="0.61742388747553956" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="G#">
+                                                <state key="normal" title="A♭">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -154,7 +154,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="55.5"/>
                                                 <color key="backgroundColor" red="0.35176223633021581" green="0.40259762110000002" blue="0.61742388747553956" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="D#">
+                                                <state key="normal" title="E♭">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -206,7 +206,7 @@
                                                 <rect key="frame" x="31" y="0.0" width="30" height="55.5"/>
                                                 <color key="backgroundColor" red="0.35176223633021581" green="0.40259762110000002" blue="0.61742388747553956" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="C#">
+                                                <state key="normal" title="D♭">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
