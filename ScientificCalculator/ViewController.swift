@@ -11,7 +11,10 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    var audioPlayer = AVAudioPlayer()
+    //var audioPlayer = AVAudioPlayer()
+    
+    let soundFileNames = ["C2","C#2","D2","D#2","E2","F2","F#2","G2","G#2","A2","A#2","B2","C3","C#3","D3"]
+    var audioPlayers = [AVAudioPlayer]()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return.lightContent
@@ -28,8 +31,34 @@ class ViewController: UIViewController {
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
+         do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C2", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+        }
+        catch {
+            print(error)
+        }
+        */
+        
+        for sound in soundFileNames {
+            
+            do {
+                let url = NSURL(fileURLWithPath: Bundle.main.path(forResource: sound, ofType: "mp3")!)
+                let audioPlayer = try AVAudioPlayer(contentsOf: url as URL)
+                
+                audioPlayers.append(audioPlayer)
+            }
+            catch {
+                audioPlayers.append(AVAudioPlayer())
+            }
+            
+            
+        }
         
         setZero = true
         op = 0
@@ -38,14 +67,31 @@ class ViewController: UIViewController {
         
     }
     
-    
-    @IBAction func playC(_ sender: Any) {
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        let audioPlayer = audioPlayers[sender.tag]
         
-        print("testin")
+        if audioPlayer.isPlaying {
+            audioPlayer.stop()
+            audioPlayer.play()
+        }
+        else {
+            audioPlayer.play()
+        }
+        
         
     }
     
+    /*
+    @IBAction func playC(_ sender: Any) {
+       
+        audioPlayer.play()
+    }
     
+    @IBAction func playCsharp(_ sender: Any) {
+        
+        audioPlayer.play()
+    }
+    */
     
     
     
