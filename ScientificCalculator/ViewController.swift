@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var audioPlayer = AVAudioPlayer()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return.lightContent
     }
